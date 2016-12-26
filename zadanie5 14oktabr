@@ -1,0 +1,38 @@
+// ConsoleApplication35.cpp: определяет точку входа для консольного приложения.
+//
+
+#include "stdafx.h"
+#include <string>
+#include <iostream>
+#include < math.h > 
+using namespace std;
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	int ch1;
+	int ch2;
+	int ch3;
+	int min2;
+	int min3;
+	int min1;
+	int sec1;
+	int sec3;
+	int sec2;
+	cout << "vremia 1=";
+	cin >> ch1 >> min1 >> sec1;
+	cout << "vremia 2=";
+	cin >> ch2 >> min2 >> sec2;
+	ch3 = ch2 - ch1;
+	min3 = min2 - min1;
+	sec3 = sec2 - sec1;
+	if (sec3 < 0){ min3 = min3 - 1; sec3 = 60 + sec3; };
+	if (min3 < 0){ ch3 = ch3-1; min3 = 60 + min3; };
+	if (ch3 < 0){ ch3 = 24 + ch3; };
+	
+	
+	cout << ch3 << ":" << min3 << ":" << sec3 << endl;
+	system("pause");
+
+	return 0;
+}
+
