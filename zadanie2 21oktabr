@@ -1,0 +1,33 @@
+// ConsoleApplication6.cpp: определяет точку входа для консольного приложения.
+//
+
+#include "stdafx.h"
+#include <string>
+#include <iostream>
+#include < math.h > 
+using namespace std;
+
+
+int main()
+{
+	int *mas = new int[12];
+	int m;
+	for (int i = 1; i <= 12; i++) {
+		mas[i] = i;
+	}
+	for (int i = 1; i <= 12; i++) {
+		cout << mas[i] << " ";
+		cout << endl;
+	for (int i = 1; i < 12; i=i+2) {
+		m = mas[i];
+		mas[i] = mas[i + 1];
+		mas[i + 1] = m;
+
+	}
+	for (int i = 1; i <= 12; i++) {
+		cout << mas[i] << " ";
+	}
+	system("pause");
+    return 0;
+}
+
