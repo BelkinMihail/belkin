@@ -1,0 +1,35 @@
+// ConsoleApplication32.cpp: определяет точку входа для консольного приложения.
+//
+
+#include "stdafx.h"
+#include <string>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int m;
+	string d1 = "ponedelnik";
+	string d2 = "vtornik";
+	string d3 = "sreda";
+	string d4 = "chetverg";
+	string d5 = "piatnica";
+	string d6 = "subbota";
+	string d7 = "voskresenie";
+
+	cout << "nomer nedeli =";
+	cin >> m;
+	if (m == 1) { cout << d1; };
+	if (m == 2) { cout << d2; };
+	if (m == 3){ cout << d3; };
+	if (m == 4) { cout << d4; };
+	if (m == 5) { cout << d5; };
+	if (m == 6) { cout << d6; };
+	if (m == 7) { cout << d7; };
+	cout << endl;
+	system("pause");
+	return 0;
+}
+
+zadanie2
