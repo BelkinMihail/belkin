@@ -1,0 +1,56 @@
+// чтото под конец не очень у меня работал но вроде на эеран выводит
+//
+
+#include "stdafx.h"
+#include <string>
+#include <iostream>
+#include < math.h > 
+using namespace std;
+
+void func1(int n, double mas) {
+
+	mas = n;
+}
+	void func2(double *mas, int n) {
+
+	for (int i = 1; i <= n; i++) {
+		mas[i] = i;
+	}
+
+
+}
+void func3(double *mas, int n) {
+	for (int i = 1; i <= n; i++) {
+		cout << mas[i] << " ";
+
+	}
+
+
+}
+void func4(double *mas,int n) {
+	for(int i=1;i<=n;i++)
+	delete [i]mas;
+
+}
+
+
+int main()
+{
+	cout << "fffff";
+	double *mas=new double[1];
+	int m;
+	int n;
+	cin >> m;
+	while (m != 0) {
+		cin >> n;
+		func1(n,* mas);
+		func2(mas, n);
+		func3(mas, n);
+		func4(mas,n);
+
+		cout << "введите 0 если хотите закончить";
+		cin >> m;
+	}
+    return 0;
+}
+
