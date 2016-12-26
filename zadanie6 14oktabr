@@ -1,0 +1,36 @@
+// ConsoleApplication36.cpp: определяет точку входа для консольного приложения.
+//
+
+#include "stdafx.h"
+#include <string>
+#include <iostream>
+#include < math.h > 
+using namespace std;
+
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	int n;
+	int m;
+	int t=1;
+	cout << "n=";
+	cin >> n;
+	int y = n;
+	cout << "m=";
+	cin >> m;
+	int k;
+	for (int i = 1; y > 0; i++){
+		y = y / 10;
+		k = i;
+	}
+	for (int i = 1; i <=k ; i++){
+		t = t * 10;
+	};
+	for (int i = 1; i <= m; i++){ t = t / 10; };
+	n = n / t;
+	cout << n;
+	system("pause");
+
+	return 0;
+}
+
