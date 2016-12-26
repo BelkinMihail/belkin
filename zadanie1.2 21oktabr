@@ -1,0 +1,33 @@
+// чет не понял что за ошибка
+
+#include "stdafx.h"
+#include <string>
+#include <iostream>
+#include < math.h > 
+using namespace std; int main();
+
+int main()
+{
+	char n[100];
+	char k[100];
+	cin >> n;
+	int j;
+	char m[2] =" ";
+	int i;
+	while (n[i] != '/n') {
+		if (strcpy(m, n) == 0) {
+			strcpy(k, n);
+		};
+		for (int h = 1; h <= j; h++) {
+			cout << k[j];
+
+		}
+
+			cout << endl;
+			i++;
+
+	}
+	
+    return 0;
+}
+
