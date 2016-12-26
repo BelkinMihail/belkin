@@ -1,0 +1,28 @@
+// не могу понять почему выводит какието иероглифы
+//
+
+#include "stdafx.h"
+#include <string>
+#include <iostream>
+#include < math.h > 
+using namespace std;
+int main()
+{
+	char m[100];
+	char n[100];
+	int h = 1;
+	int len;
+	cin >> m;
+	len = strlen(m);
+	for (int i = len; i >=1; i--) {
+		m[i] = n[h];
+		h = h + 1;
+		
+	}
+	for (int i = 1; i <= len; i++) {
+		cout << n[i];
+	}
+	system("pause");
+    return 0;
+}
+
