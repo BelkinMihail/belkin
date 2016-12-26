@@ -1,0 +1,26 @@
+// ConsoleApplication34.cpp: определяет точку входа для консольного приложения.
+//
+
+#include "stdafx.h"
+#include <string>
+#include <iostream>
+#include < math.h > 
+using namespace std;
+
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	float a[7];
+	float m;
+	float s = 0;
+	for (int i = 1; i <= 7; i++){
+		cin >> m;
+		a[i] = m;
+		if (abs(a[i]) > 3.2){
+			s = s + m*m;
+		}
+	}
+	cout << s;
+	system("pause");
+	return 0;
+}
