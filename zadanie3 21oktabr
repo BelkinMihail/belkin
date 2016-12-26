@@ -1,0 +1,47 @@
+// не может прочитать n из памяти в первом цикле
+//
+
+
+#include "stdafx.h"
+#include <string>
+#include <iostream>
+#include < math.h > 
+using namespace std;
+
+
+int main()
+{
+	
+	char m[100];
+	char n[100];
+	int k=0;
+	int u;
+	int l = 1;
+	cin >> m;
+	cin >> n;
+	for (int j = 1; n[l] != '/n'; j++) { l = l + 1; };
+	for (int i = 1; m[i]!= '/n'; i++) {
+		if (m[i] == n[1]) {
+
+			for (int h = 1, y = i; h <= l;h++,y++) {
+
+				if (m[y] == n[h]) { k = k+1; }
+			}
+			if (k = l) {
+				u = i;
+				
+
+				
+
+			};
+		};
+
+
+	};
+	
+	cout << m;
+	system("pause");
+
+    return 0;
+}
+
