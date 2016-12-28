@@ -1,0 +1,45 @@
+// ConsoleApplication17.cpp: определяет точку входа для консольного приложения.
+//
+
+#include "stdafx.h"
+#include <string>
+#include <iostream>
+#include < math.h > 
+using namespace std;
+
+class tiles {
+public:
+	string brand;
+	int size_h;
+	int size_w;
+	int price;
+	void in(string bra, int size_1, int size_2, int price1) {
+		brand = bra;
+		size_h = size_1;
+		size_w = size_2;
+		price = price1;
+
+
+	}
+	void getdata() {
+
+		cout << size_h << " " << size_w<<" "  << price << " " << brand;
+
+	}
+
+
+};
+int main()
+{
+	string brand2="grad";
+	int size_h1=1;
+	int size_w1=2;
+	int price2=450;
+	tiles clas;
+	
+	clas.in(brand2, size_h1, size_w1, price2);
+	clas.getdata();
+	system("pause");
+    return 0;
+}
+
