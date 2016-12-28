@@ -1,0 +1,77 @@
+// ConsoleApplication21.cpp: определяет точку входа для консольного приложения.
+//
+
+#include "stdafx.h"
+#include "stdafx.h"
+#include <string>
+#include <iostream>
+#include < math.h > 
+using namespace std;
+
+int kol1;
+int cena1;
+int ves;
+int nam;
+string name;
+
+class product {
+private:
+	int cena = 200;
+	int mas;
+	string n = "ddd";
+public:
+
+	void set() {
+		cena1 = cena;
+		ves = mas;
+		name = n;
+
+
+	}
+
+};
+
+
+
+
+class buy :product {
+private:
+	int kol = 5;
+
+public:
+
+	void set() { kol1 = kol; }
+	void getv() {
+		cena1 = cena1*kol1;
+		ves = ves*kol1;
+
+	}
+
+};
+
+
+
+class check :buy {
+public:
+
+	void vivod() {
+		cout << name << " " << kol1 << "kol " << cena1 << "rub " << ves <<"kg ";
+
+	}
+};
+
+int main()
+{
+	product prod;
+
+	prod.set();
+	buy by;
+
+	by.getv();
+
+	check ch;
+	ch.vivod();
+
+	system("pause");
+    return 0;
+}
