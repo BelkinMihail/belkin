@@ -1,0 +1,28 @@
+// чет мозг сломался
+//
+
+#include "stdafx.h"
+#include <string>
+#include <iostream>
+#include < math.h > 
+using namespace std;
+
+int main()
+{
+	string n[5];
+	int m[5];
+	int min;
+	for (int i = 1; i <= 5; i++) {
+		cin >> n[i] >> m[i];
+
+	}
+
+	for (int i = 1; i <= 5; i++) {
+		for (int j = i; i <= 5; j++){
+			if (m[i] < m[j]) { min = i; }
+			cout << m[min] << " " << n[min] << endl;
+	}
+}
+    return 0;
+}
+
