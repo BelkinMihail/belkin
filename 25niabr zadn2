@@ -1,0 +1,55 @@
+// ConsoleApplication18.cpp: определяет точку входа для консольного приложения.
+//
+
+#include "stdafx.h"
+#include <string>
+#include <iostream>
+#include < math.h > 
+using namespace std;
+
+class ur {
+public:
+	int a;
+	int b;
+	int c;
+	float dis;
+	float x1;
+	float x2;
+	void disk(int a1, int b1, int c1,float disc) {
+		dis = b1*b1 - 4 * a1*c1;
+
+
+
+	}
+	void xx1(float dis1, int a1, int b1) {
+
+		x1 = (-b1*b1 - sqrt(dis1)) / (a1*a1);
+		cout << x1 << endl;
+	}
+
+	void xx2(float dis1, int a1, int b1) {
+
+		x2 = (-b1*b1 + sqrt(dis1)) / (a1*a1);
+		cout << x2 << endl;
+	}
+};
+
+
+int main()
+{
+	int a;
+	int b;
+	int c;
+	float dis = 0;;
+	ur urav;
+	cin >> a >> b >> c;
+	urav.disk(a, b, c, dis);
+	if (dis < 0) { cout << "нет корней"; }
+	else {
+		urav.xx1(dis, a, b);
+		urav.xx2(dis, a, b);
+
+	}
+	system("pause");
+    return 0;
+}
