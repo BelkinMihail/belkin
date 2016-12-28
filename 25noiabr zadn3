@@ -1,0 +1,51 @@
+// ConsoleApplication20.cpp: определяет точку входа для консольного приложения.
+//
+
+#include "stdafx.h"
+#include "stdafx.h"
+#include <string>
+#include <iostream>
+#include < math.h > 
+using namespace std;
+
+class vremia {
+public:
+		int chas;
+	int min;
+	int sec;
+	int s=0;
+	int m = 0;
+	string vr = "AM";
+
+	void ch(int chas1, int  min1, int sec1, int chas2, int min2, int sec2) {
+		sec = sec2 - sec1;
+		if (sec < 0) { sec = sec + 60; s = 1; }
+		min = min2 - min1 - s;
+		if (min < 0) { min = min + 60; m = 1; }
+		chas = chas2 - chas1 - m;
+		if (chas2 < 0) { chas2 = chas2 + 60; }
+
+		
+		cout << chas << ":" << min << ":" << sec;
+	}
+		
+			
+		
+
+
+		
+	
+};
+
+
+
+int main()
+{
+	int a, b, c, a1, b1, c1;
+	cin >> a >> b >> c >> a1 >> b1 >> c1;
+	vremia vre;
+
+	vre.ch(a, b, c, a1, b1, c1);
+	system("pause");
+    return 0;
+}
